@@ -41,7 +41,7 @@ params:
     favicon: /image/favicon.ico
     footer:
         since: 2021
-        customText: You never know what will happen next.
+        customText: You never know what will happen next.<br><a href="https://icp.gov.moe/?keyword=20220619" target="_blank">萌ICP备20220619号</a>
 
     dateFormat:
         published: Jan 02, 2006
