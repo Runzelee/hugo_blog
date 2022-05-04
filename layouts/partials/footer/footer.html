@@ -8,32 +8,12 @@
         {{ now.Format "2006" }} {{ .Site.Title }}
     </section>
 
-    <script>
-        let future= new Date(2022,05,18);
-        function time(){
-            let N =new Date();
-            let d=(future.getTime()-N.getTime())/86400000;
-            let h=(future.getTime()-N.getTime())%86400000/3600000;
-            let m=(future.getTime()-N.getTime())%3600000/60000;
-            let s=(future.getTime()-N.getTime())%60000/1000;
-            document.getElementById("time").innerHTML="距离2022年上海市初中学业水平考试"+d.toFixed(0)+"天"+h.toFixed(0)+"小时"+m.toFixed(0)+"分钟"+s.toFixed(0)+"秒"
-        }
-        function now(){
-            let N =new Date();
-            document.getElementById("now").innerHTML=N.getFullYear()+"年"+(N.getMonth()+1)+"月"+N.getDate()+"日"+N.getHours()+"小时"+
-                N.getMinutes()+"分钟"+N.getSeconds()+"秒";
-            console.log("aaa");
-        }
-        setInterval(now,1000);
-        setInterval(time,1000);
-    </script>
-    
     <section class="powerby">
         {{ with .Site.Params.footer.customText }}
             {{ . | safeHTML }} <br/>
         {{ end }}
         
-        <div id = "time"></div>
+        <div id = "info"></div>
 
         {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
         {{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
@@ -43,3 +23,20 @@
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
     </section>
 </footer>
+
+<script>
+    var info=document.getElementById('info');
+    setInterval(function(){
+        //现在的日期
+        var nd=new Date();
+        //目标的日期 0-11
+        var td=new Date(2022,5,18);
+        //td-nd  时间戳 毫秒差  把diff换算成天，小时，分钟，秒
+        var diff=td-nd;
+        var day=parseInt(diff/(1000*60*60*24));
+        var hour=parseInt(diff%(1000*60*60*24)/(1000*60*60));
+        var minutes=parseInt(diff%(1000*60*60)/(1000*60));
+        var seconds=parseInt(diff%(1000*60*60)%(1000*60)/1000);
+        info.innerText='距离2022年上海市初中学业水平考试'+day+'天'+hour+'小时'+minutes+'分钟'+seconds+'秒';
+    },1000)   
+</script>
