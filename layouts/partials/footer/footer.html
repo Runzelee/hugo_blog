@@ -1,0 +1,45 @@
+{{- $ThemeVersion := "3.11.0" -}}
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+            {{ .Site.Params.footer.since }} - 
+        {{ end }}
+        {{ now.Format "2006" }} {{ .Site.Title }}
+    </section>
+
+    <script>
+        let future= new Date(2022,05,18);
+        function time(){
+            let N =new Date();
+            let d=(future.getTime()-N.getTime())/86400000;
+            let h=(future.getTime()-N.getTime())%86400000/3600000;
+            let m=(future.getTime()-N.getTime())%3600000/60000;
+            let s=(future.getTime()-N.getTime())%60000/1000;
+            document.getElementById("time").innerHTML="距离2022年上海市初中学业水平考试"+d.toFixed(0)+"天"+h.toFixed(0)+"小时"+m.toFixed(0)+"分钟"+s.toFixed(0)+"秒"
+        }
+        function now(){
+            let N =new Date();
+            document.getElementById("now").innerHTML=N.getFullYear()+"年"+(N.getMonth()+1)+"月"+N.getDate()+"日"+N.getHours()+"小时"+
+                N.getMinutes()+"分钟"+N.getSeconds()+"秒";
+            console.log("aaa");
+        }
+        setInterval(now,1000);
+        setInterval(time,1000);
+    </script>
+    
+    <section class="powerby">
+        {{ with .Site.Params.footer.customText }}
+            {{ . | safeHTML }} <br/>
+        {{ end }}
+        
+        <div id = "time"></div>
+
+        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
+        {{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
+        {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>` -}}
+
+        {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
+        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
+    </section>
+</footer>
