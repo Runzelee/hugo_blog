@@ -64,8 +64,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: gitalk
 
         disqusjs:
             shortname:
@@ -132,11 +132,11 @@ params:
             emitMetadata: 0
 
         gitalk:
-            owner:
-            admin:
-            repo:
-            clientID:
-            clientSecret:
+            owner: Runzelee
+            admin: Runzelee
+            repo: image-hosting
+            clientID: 7135cef0806cdd995b3b
+            clientSecret: 18de6c04c697cbbae6cc53a9d764900a57749e24
 
         cusdis:
             host:
