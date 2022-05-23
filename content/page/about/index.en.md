@@ -7,7 +7,6 @@ aliases:
   - about-hugo
   - contact
 license: CC BY-NC-ND
-lastmod: '2022-04-29'
 image: image/about_image.jpeg
 menu:
     main: 
@@ -26,13 +25,13 @@ You can call me Runze.
 Languages I can basically use:
  - Java
  - Kotlin
- - Python  
+ - Javascript 
 
 Still learning:
  - Go
  - C#
  - HTML/CSS
- - Javascript
+ - Python
 
 I have recently focused on Android development and intermittently started a new project, but it was temporarily put on hold due to the tight school learning tasks.
 

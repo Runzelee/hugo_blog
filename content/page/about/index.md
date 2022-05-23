@@ -7,7 +7,6 @@ aliases:
   - about-hugo
   - contact
 license: CC BY-NC-ND
-lastmod: '2022-04-29'
 image: image/about_image.jpeg
 menu:
     main: 
@@ -26,13 +25,13 @@ toc: false
 ~~擅长~~稍微懂懂的语言：
  - Java
  - Kotlin
- - Python  
+ - Javascript
 
 正在学习：
  - Go
  - C#
  - HTML/CSS
- - Javascript
+ - Python
 
 最近正在研究Android开发，间歇着手一个项目待发布，但由于学习任务较紧暂时搁置了。
 
