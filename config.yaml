@@ -64,8 +64,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: gitalk
+        enabled: true
+        provider: waline
 
         disqusjs:
             shortname:
@@ -94,11 +94,11 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL:
-            lang:
-            visitor:
-            avatar:
-            emoji:
+            serverURL: comments.runzelee.xyz
+            lang: zh-CN
+            visitor: true
+            avatar: image/comment_avatar.jpg
+            emoji: 
                 - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
             requiredMeta:
                 - name
@@ -106,7 +106,7 @@ params:
                 - url
             placeholder:
             locale:
-                admin: Admin
+                admin: 小白本人
 
         twikoo:
             envId:

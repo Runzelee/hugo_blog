@@ -22,15 +22,10 @@ I'm a student that ready to graduate from junior middle school from China, like 
 I'm also a programming and science hobbyist.  
 You can call me Runze.  
 
-Languages I can basically use:
- - Java
+Languages I'm learning:
  - Kotlin
  - Javascript 
-
-Still learning:
  - Go
- - C#
- - HTML/CSS
  - Python
 
 I have recently focused on Android development and intermittently started a new project, but it was temporarily put on hold due to the tight school learning tasks.

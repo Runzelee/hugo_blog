@@ -22,15 +22,11 @@ toc: false
 
 热爱历史、数学、物理、编程，但是因为学校和家庭环境原因没有~~也不想~~成为oier。  
 成绩一般，正在努力。💪  
-~~擅长~~稍微懂懂的语言：
- - Java
- - Kotlin
- - Javascript
 
 正在学习：
+ - Kotlin
+ - Javascript 
  - Go
- - C#
- - HTML/CSS
  - Python
 
 最近正在研究Android开发，间歇着手一个项目待发布，但由于学习任务较紧暂时搁置了。

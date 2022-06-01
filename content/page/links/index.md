@@ -11,8 +11,18 @@ menu:
         params:
             icon: link
 
-comments: false
+comments: true
 license: false
 ---
 
-下面是友链，欢迎[联系我](/%E5%85%B3%E4%BA%8E/#keep-in-touch)互加地址，谢谢！ 
+下面是友链，可以直接在下面评论，也欢迎[联系我](/%E5%85%B3%E4%BA%8E/#keep-in-touch)互加地址。
+
+格式：
+```  
+- title: 名称  
+  description: 介绍  
+  website: 网址   
+  image: 图标
+```
+
+谢谢大家！

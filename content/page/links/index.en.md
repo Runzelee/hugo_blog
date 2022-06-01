@@ -11,9 +11,17 @@ menu:
         params:
             icon: link
 
-comments: false
+comments: true
 license: false
 ---
 
 Friend links are below.  
-Welcome to [contact me](/en/about/#keep-in-touch) to add links, thx. 
+Welcome to [contact me](/en/about/#keep-in-touch) or write a comment below directly to add links, thx. 
+
+Format:
+```  
+- title: Title
+  description: Description
+  website: URL
+  image: Image
+```
