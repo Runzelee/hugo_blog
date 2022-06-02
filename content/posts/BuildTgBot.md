@@ -5,7 +5,8 @@ date: 2022-05-22
 description: 使用nodejs写Telegram Bot详细教程
 image: image/category_telegram_image.webp
 categories: 
-     - Tech/Telegram
+     - Tech
+     - Telegram
 tags:
      - 教程
 ---

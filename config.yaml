@@ -37,7 +37,7 @@ params:
     mainSections:
         - posts
     featuredImageField: image
-    rssFullContent: true
+    rssFullContent: false
     favicon: /image/favicon.ico
     footer:
         since: 2021
@@ -203,12 +203,19 @@ menu:
           url: https://github.com/Runzelee
           params:
               icon: brand-github
-
         - identifier: twitter
           name: Twitter
           url: https://twitter.com/runze69143376
           params:
               icon: brand-twitter
+        
+        - identifier: rss
+          name: RSS
+          url: /posts/index.xml
+          params:
+              icon: rss
+
+
 
 related:
     includeNewer: true
