@@ -232,7 +232,7 @@ markup:
     goldmark:
         renderer:
             ## Set to true if you have HTML content inside Markdown
-            unsafe: false
+            unsafe: true
     tableOfContents:
         endLevel: 4
         ordered: true
@@ -245,3 +245,8 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+
+        
+module:
+  imports:
+  - path: github.com/Runzelee/aplayer-hugo-module
