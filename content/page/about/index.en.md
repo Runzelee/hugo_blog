@@ -21,17 +21,8 @@ toc: false
 
 ## Hi there
 
-I'm a high school student from China, like coding something for fun.  
+I'm a normal high school student from China, like coding something for fun.  
 I'm also a programming and science hobbyist.  
-You can call me Runze.  
-
-Languages I'm learning:
- - Kotlin
- - Javascript 
- - Go
- - Python
-
-I have recently focused on Android development.
 
 Regards.
 

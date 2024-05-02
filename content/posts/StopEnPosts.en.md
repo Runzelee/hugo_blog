@@ -10,4 +10,3 @@ I always spend lots of time translating posts because English is not my first la
 In any case, this English site will never be removed because I think I need a place for my international friends to reach me. Of course, I'm always learning English and improving my communication skills, so you can contact me in English without any worries.   
 
 It would also be nice to machine translate my posts directly with Google.  
-Thank you, my international friends!

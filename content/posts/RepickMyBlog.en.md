@@ -14,9 +14,3 @@ I'm too busy doing school learning tasks to buy the domain back since the domain
 Today I migrated my blog to Hugo and rebuilt it, hoping I will write new articles more frequently in the future.
     
 Of course, my needs for my personal website are not only blogs. I will add more functions for frontend learning, such as small games, weather components and other interactions.  
-
-Set up a small plan:  
-> At least one article per month, unlimited field.
- 
-Wish I can do it.  
-You can also supervise me to prevent my laziness.👋

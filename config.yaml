@@ -1,4 +1,4 @@
-baseurl: https://www.runzelee.xyz
+baseurl: https://www.runzelee.top
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
@@ -41,7 +41,7 @@ params:
     favicon: /image/favicon.ico
     footer:
         since: 2021
-        customText: You never know what will happen next.<br><a href="https://icp.gov.moe/?keyword=20220619" target="_blank">萌ICP备20220619号</a>
+        customText: You never know what will happen next.
 
     dateFormat:
         published: Jan 02, 2006
@@ -94,7 +94,7 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL: comments.runzelee.xyz
+            serverURL: comments.runzelee.top
             lang: zh-CN
             visitor: true
             avatar: image/comment_avatar.jpg
@@ -190,7 +190,7 @@ menu:
     main: 
         - identifier: Drive
           name: Drive
-          url: https://drive.runzelee.xyz
+          url: https://drive.runzelee.top
           weight: -10
           params:
              icon: cloud
