@@ -1,7 +1,8 @@
 baseurl: https://www.runzelee.top
 languageCode: zh-cn
 theme: hugo-theme-stack
-paginate: 5
+pagination:
+  pagerSize: 5
 title: Runzelee Site
 
 languages:

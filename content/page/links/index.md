@@ -24,5 +24,3 @@ license: false
   website: 网址   
   image: 图标
 ```
-
-谢谢大家！

@@ -21,7 +21,7 @@ toc: false
 
 ## Hi there
 
-I'm a normal high school student from China, like coding something for fun.  
+I'm a first-year university student, and I'm currently learning embedded systems.
 I'm also a programming and science hobbyist.  
 
 Regards.

@@ -1,7 +1,7 @@
 ---
 title: 关于
 description: 我是谁？
-date: '2021-07-08'
+date: '2025-10-05'
 aliases:
   - about-us
   - about-hugo
@@ -19,8 +19,7 @@ toc: false
 {{< meting server="netease" type="song" id="573652613" >}}
 {{< /meting >}}
 
-一个对计算机比较感兴趣的普通高中生，由于学业繁忙，博客暂时不会更新。
-
+时隔高中三年重返博客。一直对计算机感兴趣，大一新生，目前在学嵌入式。
 
 
 ### KEEP IN TOUCH：  
