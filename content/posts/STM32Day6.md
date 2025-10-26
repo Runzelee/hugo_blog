@@ -1,7 +1,7 @@
 ---
 author: Runze Lee
 title: STM32笔记 Day 6 PID
-date: 2025-10-25
+date: 2025-10-26
 license: CC 4.0 BY-SA
 description: 大一新生STM32学习笔记
 image: image/category_stm32_image.jpg
