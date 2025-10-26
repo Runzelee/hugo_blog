@@ -167,4 +167,4 @@ while(1){
      Set_GM6020_Voltage(8000);
 }
 ```
-这样便可以实现每隔50ms向电机发送5000电压数据开转了。需要注意就是`Configure_Filter()`要在`HAL_CAN_Start(&hcan1)`之前调用。
+这样便可以实现每隔50ms向电机发送8000电压数据开转了。需要注意就是`Configure_Filter()`要在`HAL_CAN_Start(&hcan1)`之前调用。
