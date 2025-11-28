@@ -251,3 +251,16 @@ markup:
 module:
   imports:
   - path: github.com/Runzelee/aplayer-hugo-module
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['\[', '\]']
+            - ['$$', '$$']
+          inline:
+            - ['\(', '\)']
+            - ['$', '$']
