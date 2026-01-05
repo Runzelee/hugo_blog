@@ -234,6 +234,16 @@ markup:
         renderer:
             ## Set to true if you have HTML content inside Markdown
             unsafe: true
+        extensions:
+            passthrough:
+                enable: true
+                delimiters:
+                    block:
+                        - ['\[', '\]']
+                        - ['$$', '$$']
+                    inline:
+                        - ['\(', '\)']
+                        - ['$', '$']
     tableOfContents:
         endLevel: 4
         ordered: true
@@ -251,16 +261,3 @@ markup:
 module:
   imports:
   - path: github.com/Runzelee/aplayer-hugo-module
-
-markup:
-  goldmark:
-    extensions:
-      passthrough:
-        enable: true
-        delimiters:
-          block:
-            - ['\[', '\]']
-            - ['$$', '$$']
-          inline:
-            - ['\(', '\)']
-            - ['$', '$']
