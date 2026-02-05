@@ -386,9 +386,9 @@ void USART3_user_IRQHandler(void)
             __HAL_DMA_ENABLE(&hdma_usart3_rx);
 
             // 如果长度合法，进行解析
-            if (this_time_rx_len == RC_FRAME_LENGTH)
+            if (this_time_rx_len == FRAME_LENGTH)
             {
-                parse(rx1_buf, &rc_ctrl);
+                parse(rx1_buf);
             }
         }
         else
@@ -406,9 +406,9 @@ void USART3_user_IRQHandler(void)
 
             __HAL_DMA_ENABLE(&hdma_usart3_rx);
 
-            if (this_time_rx_len == RC_FRAME_LENGTH)
+            if (this_time_rx_len == FRAME_LENGTH)
             {
-                parse(rx2_buf, &rc_ctrl);
+                parse(rx2_buf);
             }
         }
     }
