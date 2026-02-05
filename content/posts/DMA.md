@@ -143,7 +143,7 @@ void DMA1_Stream1_IRQHandler(void)
 | **CTS** | **LBD** | **TXE** | **TC** | **RXNE** | **IDLE** | **ORE** | **NF** | **FE** | **PE** |
 | rw | rw | r | rw | rw | r | r | r | r | r |
 
-这里有我们熟悉的TC，但注意，这里的bit 4是IDLE（空闲标志）。这意味着，当线路空闲（RX长时间维持高电平）IDLE就会置为1，**我们完全可以让线路空闲时再触发中断**，这是我们机器人上接收雷达、裁判系统、遥控器数据的常用方式，非常高效。但这有一个极大的问题，就是**接收到的数据是不定长的**，HAL库并不擅长这一点，且HAL库一直没有封装这个IDLE寄存器的DMA中断，直到2020年末的STM32CubeF4 V1.26.0才引入`HAL_UARTEx_ReceiveToIdle_DMA()`，而在此之前全球的嵌入式开发者们都通过魔改这个中断函数实现，尽管如此由于历史包袱新接口效率依然比手搓要低。
+这里有我们熟悉的TC，但注意，这里的bit 4是IDLE（空闲标志）。这意味着，当线路空闲（RX长时间维持高电平）IDLE就会置为1，**我们完全可以让线路空闲时再触发中断**，这是我们机器人上接收雷达、裁判系统、遥控器数据的常用方式，非常高效。但这有一个极大的问题，就是**接收到的数据是不定长的**，HAL库并不擅长这一点，且HAL库一直没有封装这个IDLE寄存器的DMA中断，直到2021年的[STM32CubeF4 V1.26.0](https://github.com/STMicroelectronics/STM32CubeF4/blob/v1.26.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c#L1805)才引入`HAL_UARTEx_ReceiveToIdle_DMA()`，而在此之前全球的嵌入式开发者们都通过魔改这个中断函数实现，尽管如此由于历史包袱新接口效率依然比手搓要低。
 
 ### 自定义IDLE中断
 
